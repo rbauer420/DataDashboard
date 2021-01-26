@@ -28,6 +28,6 @@ function validate(){
       error_message.innerHTML = text;
       return false;
     }
-    alert("Your contact form was submitted successfully! I will respond as soon as possible!");
+    alert("Your contact form was submitted successfully! We will respond as soon as possible!");
     return true;
   }

@@ -123,7 +123,7 @@ textarea {
 }
 
 .contactSubmit {
-    margin-left: 20px;
+    margin-left: 120px;
     padding: 10px;
     background-color: rgba(0, 136, 169, 1);
     border: 2px solid whitesmoke;
@@ -140,3 +140,62 @@ textarea {
     font-size: 14px;
     transition: all 0.5s ease;
   } 
+
+  /** Media Queries **/
+
+@media only screen and (max-width: 500px) {
+    .main-header
+    .nav_links
+    .button {
+       justify-content: center;
+       flex-wrap: wrap;
+       width: 100%;
+    }
+
+    label {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #toggle:checked + .nav_links {
+        display: flex;
+        visibility: visible;
+        flex-direction: column;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+        
+    .main-header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+    }
+        
+    .nav_links li {
+        display: inline-block;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+    
+/**@media only screen and (min-width: 1140px) {
+
+} **/
