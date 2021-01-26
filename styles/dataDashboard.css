@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #AAA0A0;
+    text-decoration: none;
+}
+
+.main-header {
+    padding: 30px 10%;
+    background-color: navy;
+    
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #86beD1;
+}
+
+.isDisabled 
+{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+
+/** Main Body **/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+    background-color: cornflowerblue;
+}
+
+/**.main-content {
+}**/
+
+.title {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: center;
+    color: ivory;
+    text-shadow: 4px 4px 5px black;
+}
+ 
+/** Footer **/
+.main-footer {
+    position: relative;
+    background: #AAA0A0;
+    padding: 2em 0;
+    margin-top: auto;
+    text-align: center;
+    color: black;
+}
+
+/** Contact Form **/
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+    background-color: lightslategray;
+}
+
+.contactMeForm {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.contactTitle{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: ivory;
+    text-shadow: 4px 4px 5px black;
+}
+
+.input_field {
+    margin-bottom: 10px; 
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    box-shadow: 4px 4px 5px black;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.contactSubmit {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: rgba(0, 136, 169, 1);
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px black;
+}
+
+#error_message{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  } 
