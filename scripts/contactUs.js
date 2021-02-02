@@ -39,19 +39,7 @@ function isValidMessage(message) {
     return /^[a-z]+$/.test(message);
 }
 
-/**
- * 
- * FORMATTING FUNCTIONS
- * 
- */
-
-function formatTelephone(text) {}
-
-/**
- * 
- * SET UP EVENTS
- * 
- */
+/** Error Message **/
 
 function showOrHideTip(show, element) {
   // show element when show is true, hide when false
@@ -85,6 +73,10 @@ phoneInput.addEventListener("blur", e => {
 email.addEventListener("input", createListener(isValidEmail));
 
 message.addEventListener("input", createListener(isValidMessage));
+
+alert("Your contact form was submitted successfully! We will respond as soon as possible!");
+return true;
+
 
 
 /**

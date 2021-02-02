@@ -131,7 +131,7 @@ textarea {
     box-shadow: 4px 4px 5px black;
 }
 
-span {
+.showOrHideTip {
     margin-bottom: 20px;
     background: #fe8b8e;
     padding: 0px;
