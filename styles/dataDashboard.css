@@ -50,11 +50,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
     line-height: 1.6;
-    background-color: cornflowerblue;
+    background-color: lightslategray;
 }
 
-/**.main-content {
-}**/
+/**.main-content**/
 
 .title {
     position: relative;
@@ -76,7 +75,7 @@ body {
 }
 
 /** Contact Form **/
-.contactMe {
+.contactUs {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -84,7 +83,7 @@ body {
     background-color: lightslategray;
 }
 
-.contactMeForm {
+.contactUsForm {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -132,7 +131,7 @@ textarea {
     box-shadow: 4px 4px 5px black;
 }
 
-#error_message{
+span {
     margin-bottom: 20px;
     background: #fe8b8e;
     padding: 0px;
