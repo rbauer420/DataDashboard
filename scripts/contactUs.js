@@ -22,7 +22,7 @@ function validate(){
       }
       else {
         text = "Your name can only contain letters a-z";
-        error_message.innerHTML = text;
+        errorMessage.innerHTML = text;
         return false;
       }
     } 
@@ -36,7 +36,7 @@ function validate(){
         }
         else {
           text = "The subject can only contain letters a-z";
-          error_message.innerHTML = text;
+          errorMessage.innerHTML = text;
           return false;
         }
       }
@@ -50,7 +50,7 @@ function validate(){
         }
         else {
           text = "You must enter a telephone number in the format of (555) 555-5555";
-          error_message.innerHTML = text;
+          errorMessage.innerHTML = text;
           return false;
         }
       }
@@ -69,7 +69,7 @@ function validate(){
         }
         else {
           text = "You must enter a valid email address";
-          error_message.innerHTML = text;
+          errorMessage.innerHTML = text;
           return false;
         }
       }
@@ -83,7 +83,7 @@ function validate(){
         }
         else {
           text = "Please Enter More Than 10 Characters in Your Message";
-          error_message.innerHTML = text;
+          errorMessage.innerHTML = text;
           return false;
         }
       }
