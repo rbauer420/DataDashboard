@@ -26,35 +26,31 @@
         <!--- Main Body /> -->
         <div class="contactUs">
             <div class="contactUsForm">
-        <!---    <form id="myform" onsubmit="return validate();"> -->
-                <h1 class= "contactTitle">    
+        <form id="myform" onsubmit="return validate();">
+                <h1 class="contactTitle">  
                     Contact Us
                 </h1>
-                <form action="#" method="post">
+                <div id="errorMessage"></div>
+                <fieldset>
                     <div class="input_field">
                         <label for="userName">Name</label>
                         <input id="userName" name="userName" type="text">
-                        <span>Your name can only contain letters a-z</span>
                     </div>
                     <div class="input_field">
                         <label for="subject">Subject</label>
                         <input id="subject" name="subject" type="text">
-                        <span>The subject can only contain letters a-z</span>
                     </div>
                     <div class="input_field">
                         <label for="phone">Telephone Number</label>
                         <input id="phone" name="phone" type="text">
-                        <span>You must enter a telephone number in the format of (555) 555-5555</span>
                     </div>
                     <div class="input_field">
                         <label for="email">Email</label>
                         <input id="email" name="email" type="text">
-                        <span>You must enter a valid email address</span>
                     </div>
                     <div class="input_field">
                         <label for="message">Message</label>
                         <input id="message" name="message" type="text">
-                        <span>Your message can only contain letters a-z</span>
                     </div>
                         <button class="contactSubmit" input type="submit">Send</button>
                 </fieldset>

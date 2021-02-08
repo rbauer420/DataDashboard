@@ -80,7 +80,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     line-height: 1.6;
-    background-color: lightslategray;
+    background-color: lightslategray; 
 }
 
 .contactUsForm {
@@ -100,8 +100,8 @@ body {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: ivory;
-    text-shadow: 4px 4px 5px black;
+    color: rgba(0, 136, 169, 1);
+    text-shadow: 4px 4px 5px black;;
 }
 
 .input_field {
@@ -122,7 +122,7 @@ textarea {
 }
 
 .contactSubmit {
-    margin-left: 120px;
+    margin-left: 115px;
     padding: 10px;
     background-color: rgba(0, 136, 169, 1);
     border: 2px solid whitesmoke;
@@ -131,7 +131,7 @@ textarea {
     box-shadow: 4px 4px 5px black;
 }
 
-.showOrHideTip {
+#errorMessage{
     margin-bottom: 20px;
     background: #fe8b8e;
     padding: 0px;
