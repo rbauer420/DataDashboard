@@ -3,6 +3,7 @@
 /**Contact Form */
 function validate(){
 
+    // Note
     var userName = document.getElementById("userName").value;
     var subject = document.getElementById("subject").value;
     var phone = document.getElementById("phone").value;
@@ -14,6 +15,7 @@ function validate(){
 
 
     // Name can only contain letters a-z in lowercase
+    // Note
     function isValiduserName(inputText){
       var nameformat = /^[a-z]+$/;
       if(inputText.value.match(nameformat))
@@ -21,6 +23,7 @@ function validate(){
         return true;
       }
       else {
+        // Note
         text = "Your name can only contain letters a-z";
         errorMessage.innerHTML = text;
         return false;
