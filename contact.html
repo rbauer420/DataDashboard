@@ -26,36 +26,32 @@
         <!--- Main Body /> -->
         <div class="contactUs">
             <div class="contactUsForm">
-        <form id="myform" onsubmit="return validate();">
-                <h1 class="contactTitle">  
-                    Contact Us
-                </h1>
-                <div id="errorMessage"></div>
-                <fieldset>
-                    <div class="input_field">
-                        <label for="userName">Name</label>
-                        <input id="userName" name="userName" type="text">
-                    </div>
-                    <div class="input_field">
-                        <label for="subject">Subject</label>
-                        <input id="subject" name="subject" type="text">
-                    </div>
-                    <div class="input_field">
-                        <label for="phone">Telephone Number</label>
-                        <input id="phone" name="phone" type="text">
-                    </div>
-                    <div class="input_field">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="text">
-                    </div>
-                    <div class="input_field">
-                        <label for="message">Message</label>
-                        <input id="message" name="message" type="text">
-                    </div>
-                        <button class="contactSubmit" input type="submit">Send</button>
-                </fieldset>
-            </form>
+                <form id="myform" onsubmit="return validate();">
+                    <h1 class="contactTitle">  
+                        Contact Us
+                    </h1>
+                    <div id="errorMessage"></div>
+                    <fieldset>
+                        <div class="input_field">
+                            <input id="userName" name="userName" type="text" placeholder="Name" required>
+                        </div>
+                        <div class="input_field">                            
+                            <input id="subject" name="subject" type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="input_field">                            
+                            <input id="phone" name="phone" type="text" placeholder="Telephone Number" required>
+                        </div>
+                        <div class="input_field">                            
+                            <input id="email" name="email" type="text" placeholder="Email Address" required>
+                        </div>
+                        <div class="input_field">                            
+                            <input id="message" name="message" type="text" placeholder="Message" required>
+                        </div>
+                            <button class="contactSubmit" input type="submit">Send</button>
+                    </fieldset>
+                </form>
             </div>
+        </div>
 
     <!--- Footer /> -->
         <footer class="main-footer">

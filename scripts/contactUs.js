@@ -1,90 +1,62 @@
 //Hamburger Menu//
 
+document.getElementById("contactSubmit").addEventListener("click", function(event){
+  event.preventDefault()
+});
+
 /**Contact Form */
 function validate(){
 
-    var userName = document.getElementById("userName").value;
-    var subject = document.getElementById("subject").value;
-    var phone = document.getElementById("phone").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("messgae").value;
-    var errorMessage = document.getElementById("errorMessage");
+  //Form input variables 
+  var userName = document.getElementById("userName").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("messgae").value;
+  var errorMessage = document.getElementById("errorMessage");
+  
+  errorMessage.style.padding = "25px"; 
 
-    errorMessage.style.padding = "25px";  
+
+  //Regex variables
+  var userNameRegex = /^[a-z]+$/;
+  var subjectRegex = /^[a-z]+$/;
+  var phoneRegex = /^\D*\d{3}\D*\d{3}\D*\d{4}\D*$/;
+  var emailRegex = /^[^@]+@[^@.]+\.[a-z]+$/i;
+  var messageRegex = /^.{10,}$/;
+
+  var userNameInput = userName.match(userNameRegex);
+  var subjectInput = userName.match(subjectRegex);
+  var phoneInput = userName.match(phoneRegex);
+  var emailInput = userName.match(emailRegex);
+  var messageInput = userName.match(messageRegex);
 
 
-    // Name can only contain letters a-z in lowercase
-    function isValiduserName(inputText){
-      var nameformat = /^[a-z]+$/;
-      if(inputText.value.match(nameformat))
-      {
-        return true;
-      }
-      else {
-        text = "Your name can only contain letters a-z";
-        errorMessage.innerHTML = text;
-        return false;
-      }
+  //Error message array
+  var errorMessageOptions = ["Your name can only contain letters a-z",
+    "Your subject can only contain letters a-z", 
+    "You must enter a telephone number in the format of (555) 555-5555", 
+    "You must enter a valid email address",
+    "Please Enter More Than 10 Characters in Your Message"];
+
+    if(userName != userNameInput) {
+      errorMessage.innerHTML = errorMessageOptions[0];
+      return false;
+    } else if (subject != subjectInput) {
+      errorMessage.innerHTML = errorMessageOptions[1];
+      return false;
+    } else if (phone != phoneInput) {
+      errorMessage.innerHTML = errorMessageOptions[2];
+      return false;
+    } else if (email != emailInput) {
+      errorMessage.innerHTML = errorMessageOptions[3];
+      return false;
+    } else if (message != messageInput) {
+      errorMessage.innerHTML = errorMessageOptions[4];
+      return false;
     } 
+      alert("Your contact form was submitted successfully! We will respond as soon as possible!");
+      return true;
 
-    //Subject can only contain letters a-z in lowercase
-    function isValidSubject(inputText){
-        var subjectformat = /^[a-z]+$/;
-        if(inputText.value.match(subjectformat))
-        {
-          return true;
-        }
-        else {
-          text = "The subject can only contain letters a-z";
-          errorMessage.innerHTML = text;
-          return false;
-        }
-      }
+  }
 
-    // The telephone number must be in the format of (555) 555-5555
-    function isValidPhone(inputText){
-        var phoneformat = /^\D*\d{3}\D*\d{3}\D*\d{4}\D*$/;
-        if(inputText.value.match(phoneformat))
-        {
-          return true;
-        }
-        else {
-          text = "You must enter a telephone number in the format of (555) 555-5555";
-          errorMessage.innerHTML = text;
-          return false;
-        }
-      }
-
-    //function formatPhone(text){
-     //   const regex = /^\D*(\d{3})\D*(\d{3})\D*(\d{4})\D*$/;
-      //  return text.replace(regex, '($1) $2-$3');
-   // }
-
-    // Must be a valid email address
-    function isValidEmail(inputText){
-        var emailformat = /^[^@]+@[^@.]+\.[a-z]+$/i;
-        if(inputText.value.match(emailformat))
-        {
-          return true;
-        }
-        else {
-          text = "You must enter a valid email address";
-          errorMessage.innerHTML = text;
-          return false;
-        }
-      }
-
-    // Must contain more than 10 characters
-    function isValidMessage(inputText){
-        var messagelength = /^.{10,}$/;
-        if(inputText.value.match(messagelength))
-        {
-          return true;
-        }
-        else {
-          text = "Please Enter More Than 10 Characters in Your Message";
-          errorMessage.innerHTML = text;
-          return false;
-        }
-      }
-}
