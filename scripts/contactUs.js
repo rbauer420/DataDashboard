@@ -14,9 +14,9 @@ function validate(){
   let phone = document.getElementById("phone").value;
   let email = document.getElementById("email").value;
   let message = document.getElementById("messgae").value;
-  let error_message = document.getElementById("error_message");
+  let errorMessage = document.getElementById("errorMessage");
   
-  error_message.style.padding = "10px"; 
+  errorMessage.style.padding = "10px"; 
 
 
   //Regex variables
@@ -41,22 +41,23 @@ function validate(){
     "Please Enter More Than 10 Characters in Your Message"];
 
     if (userName != userNameInput) {
-      error_message.innerHTML = errorMessageOptions[0];
+      errorMessage.innerHTML = errorMessageOptions[0];
       return false;
     } else if (subject != subjectInput) {
-      error_message.innerHTML = errorMessageOptions[1];
+      errorMessage.innerHTML = errorMessageOptions[1];
       return false;
     } else if (phone != phoneInput) {
-      error_message.innerHTML = errorMessageOptions[2];
+      errorMessage.innerHTML = errorMessageOptions[2];
       return false;
     } else if (email != emailInput) {
-      error_message.innerHTML = errorMessageOptions[3];
+      errorMessage.innerHTML = errorMessageOptions[3];
       return false;
     } else if (message != messageInput) {
-      error_message.innerHTML = errorMessageOptions[4];
+      errorMessage.innerHTML = errorMessageOptions[4];
       return false;
     } 
-      alert("Your contact form was submitted successfully! We will respond as soon as possible!");
+
+      alert("Your contact form was submitted successfully" + " " + userName + "! We will respond as soon as possible!");
       return true;
 
   }

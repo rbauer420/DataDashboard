@@ -8,11 +8,20 @@
 
 /* Navigation Bar */
 
-li, a {
+li, a, button {
     font-weight: 500;
     font-size: 16px;
     color: #AAA0A0;
     text-decoration: none;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .main-header {
@@ -109,7 +118,7 @@ body {
     margin-bottom: 10px; 
 }
 
-input[type="text"],
+input,
 textarea {
     width: 100%;
     border: 1px solid #e0e0e0;
@@ -132,7 +141,8 @@ textarea {
     box-shadow: 4px 4px 5px black;
 }
 
-.error_message{
+
+#errorMessage{
     margin-bottom: 20px;
     background: #fe8b8e;
     padding: 0px;
