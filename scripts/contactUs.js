@@ -2,12 +2,6 @@
 
 
 /**Contact Form */
-document.getElementById("myform").addEventListener("submit", function(event){
-  event.preventDefault()
-  validate()
-});
-
-
 function validate() {
 
   //Form input variables 
