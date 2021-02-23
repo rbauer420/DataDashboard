@@ -73,6 +73,17 @@ body {
     color: ivory;
     text-shadow: 4px 4px 5px black;
 }
+
+.intro {
+    text-align: center;
+}
+
+.demographics {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    max-width: 50%;
+}
  
 /** Footer **/
 .main-footer {
