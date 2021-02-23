@@ -15,16 +15,16 @@ function validate() {
   let subject = document.getElementById("subject").value;
   let phone = document.getElementById("phone").value;
   let email = document.getElementById("email").value;
-  let message = document.getElementById("messgae").value;
+  let message = document.getElementById("message").value;
   let errorMessage = document.getElementById("errorMessage");
   
   errorMessage.style.padding = "10px"; 
 
 
   //Regex variables
-  let userNameRegex = /^[a-z]+$/;
-  let subjectRegex = /^[a-z]+$/;
-  let phoneRegex = /^\D*\d{3}\D*\d{3}\D*\d{4}\D*$/;
+  let userNameRegex = /^[a-zA-Z\s]*$/;
+  let subjectRegex = /^[a-zA-Z\s]*$/; 
+  let phoneRegex = /[^\s-]?\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/g;
   let emailRegex = /^[^@]+@[^@.]+\.[a-z]+$/i;
   let messageRegex = /^.{10,}$/;
 
@@ -36,11 +36,11 @@ function validate() {
 
 
   //Error message array
-  let errorMessageOptions = ["Your name can only contain letters a-z",
+  let errorMessageOptions = ["Please enter your first and last name",
     "Your subject can only contain letters a-z", 
     "You must enter a telephone number in the format of (555) 555-5555", 
     "You must enter a valid email address",
-    "Please Enter More Than 10 Characters in Your Message"];
+    "Please enter more than 10 characters in your message"];
 
     if (userName != userNameInput) {
       errorMessage.innerHTML = errorMessageOptions[0];
