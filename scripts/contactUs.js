@@ -4,9 +4,11 @@
 /**Contact Form */
 document.getElementById("myform").addEventListener("submit", function(event){
   event.preventDefault()
+  validate()
 });
 
-function validate(){
+
+function validate() {
 
   //Form input variables 
   let userName = document.getElementById("userName").value;
@@ -27,10 +29,10 @@ function validate(){
   let messageRegex = /^.{10,}$/;
 
   let userNameInput = userName.match(userNameRegex);
-  let subjectInput = userName.match(subjectRegex);
-  let phoneInput = userName.match(phoneRegex);
-  let emailInput = userName.match(emailRegex);
-  let messageInput = userName.match(messageRegex);
+  let subjectInput = subject.match(subjectRegex);
+  let phoneInput = phone.match(phoneRegex);
+  let emailInput = email.match(emailRegex);
+  let messageInput = message.match(messageRegex);
 
 
   //Error message array
