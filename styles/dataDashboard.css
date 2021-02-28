@@ -78,6 +78,9 @@ body {
 .intro {
     margin-top: 2em;
     text-align: center;
+    color: goldenrod;
+    text-shadow: 2px 2px 4px black;
+    
 }
 
 .row {
@@ -89,6 +92,8 @@ body {
     margin-top: 1em;
     font-size: 2rem;
     font-weight: bolder;
+    color: yellowgreen;
+    text-shadow: 1px 1px 3px black;
 }
 
 select {
@@ -105,6 +110,7 @@ select {
 .demographics, 
 .variableTwo {
     font-style: italic;
+    color: teal;
   }
 
 #gender, #race, #ethnicity, #thing1, #thing2, #thing3, #thing4  {
