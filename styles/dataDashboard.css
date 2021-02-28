@@ -66,6 +66,14 @@ body {
 
 /**.main-content**/
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+    background-color: lightslategray;
+}
+
 .homeTitle {
     position: relative;
     padding-top: 30px;
@@ -87,6 +95,22 @@ body {
     margin-top: .5em;
 }
 
+.varCol {
+    position: relative;
+    flex: 70%;
+    align-self: flex-start;
+    padding-right: 1em;
+    padding-left: 1em;  
+}
+
+.vizCol {
+    position: relative;
+    flex: 30%;
+    align-self: flex-start;
+    padding-right: 1em;
+    padding-left: 1em; 
+}
+
 .graphsTitle,
 .variableTitle {
     margin-top: 1em;
@@ -104,11 +128,11 @@ select {
     color: ivory;
     border: 0;
     margin-top: 5%;
-
 }
 
 .demographics, 
 .variableTwo {
+    flex: content;
     font-style: italic;
     color: teal;
   }
@@ -117,6 +141,14 @@ select {
     font-size: 1rem;
     font-weight: bold;
     padding-left: 5%;
+  }
+
+  #gender, #race, #ethnicity {
+    padding-top: 2.5%;
+  }
+
+  #thing1, #thing2, #thing3, #thing4  {
+    padding-top: 5%;
   }
  
 /** Footer **/

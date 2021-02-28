@@ -28,11 +28,11 @@
 
     <!--- Main Body /> -->
         <div class="main-content">
-            <h1 class="homeTitle">Data Dashboard</h1>
-            <h2 class="intro">Please select which variables you want to include in your data visualization.</h2>
-            <div class="row"></div>
-            <h4 class="variableTitle">Variables</h4>
+        <h1 class="homeTitle">Data Dashboard</h1>
+        <h2 class="intro">Please select which variables you want to include in your data visualization.</h2>
+        <div class="row">
             <div class="varCol">
+            <h4 class="variableTitle">Variables</h4>
                 <div class="demographics">
                     <label id=gender>Gender</label>
                         <select>
@@ -83,14 +83,56 @@
                 </div>
             </div>
             <div class="vizCol">
-                <div class="dataViz">
                 <h4 class="graphsTitle">Graphs</h4>
-                    <p>Graphs will go here!</p>
-                    <!---Add graphs here-->
-                </div>
+                <div class="dataViz">
+                <canvas id="myGraphs"></canvas>
+                <script> 
+                    let myGraphs = document.getElementById("myGraphs").getContext('2d');
+
+                    //Global Chart Settings
+                    Chart.defaults.global.defaultFontSize = 15;
+                    Chart.defaults.global.defaultFontColor = "ivory";
+        
+                    let locationChart = new Chart(myGraphs, {
+                        type:"horizontalBar", 
+                        data:{
+                            labels:["Bank", "Residence Home", "Parking Garage/Lot", "Abandoned Condemned/Structure", "Air/Bus/Train Terminal", "Amusement Park", "Arena/Stadium/Fairgrounds",
+                                    "ATM Separate From Bank", "Auto Dealership", "Bar/Nightclub", "Campground", "Church/Synagogue/Temple/Mosque", "Commercial/Office Building", "Community Center",
+                                    "Construction Site", "Cyberspace", "Daycare Facility", "Department/Discount Store", "Dock/Wharf/Shipping Terminal", "Drug Store/Doctors Office/Hospital", 
+                                    "Farm Facility", "Field/Woods", "Gambling Facility/Casino/Race Track", "Government/Public Building", "Grocery Store", "Highway/Alley/Street/Sidewalk", 
+                                    "Hotel/Motel", "Industrial Site", "Jail/Prison/Corrections Facility", "Lake/Waterway/Beach", "Liquor Store", "Military Base", "Unknown", "Park/Playground", 
+                                    "Rental Storage Facility", "Rest Area", "Restaurant", "School/College", "School College/University", "School Elementary/Secondary", "Gas Station", 
+                                    "Mission/Homeless Shelter", "Shopping Mall", "Specialty Store", "Tribal Lands", "Convenience Store"],
+                            datasets:[{
+                                label: "Total Number of Offenses", 
+                                data:[109, 5497, 584, 8, 5, 3, 8, 1, 6, 115, 14, 13, 28, 9, 6, 0, 9, 260, 2, 110, 3, 65, 6, 36, 136, 2056, 177, 5, 95, 8, 47, 1, 201, 148, 6, 1, 148, 0, 39, 106, 270,
+                                    19, 36, 87, 1, 278], 
+                                backgroundColor:"#4d5061",
+                                borderWidth: .5, 
+                                borderColor:"black",
+                                hoverBorderWidth: 1.5,
+                                hoverBorderColor:"goldenrod",
+                            }]
+                        },
+                        options:{
+                            title:{
+                                display:true,
+                                text:"Total Number of Offenses by Location", 
+                                fontSize: 15,
+                            },
+                            legend:{
+                                position:"right",
+                                labels:{
+                                    fontColor:"white"
+                                }
+                            }
+                        }
+                    });
+                </script>
+            <!---Add graphs here-->
             </div>
-            </div>
-        </div>
+       </div>
+       </div>
 
     <!--- Footer /> -->
         <footer class="main-footer">
@@ -99,7 +141,7 @@
                 <a href="https://crime-data-explorer.fr.cloud.gov/explorer/state/kentucky/crime" style="color:darkblue", target="_blank>">Data Source: FBI's Crime Data Explorer</a>
             </div>
         </footer>
-        
+        <script src="./scripts/dataDashboard.js"></script>
     </body>
 </html>
 
