@@ -26,31 +26,71 @@
 
     <!--- Main Body /> -->
         <div class="main-content">
-            <h1 class="title">    
-                Data Dashboard
-            </h1>
-            <h3 class="intro">Please select which variables you want to include in your data visualization.</h3>
-            <div class="demographics">
-                <label id=gender>Gender</label>
-                <select>
-                    <option value="male">Female</option>
-                    <option value="female">Male</option>  
-                </select> 
-                <label id=race>Race</label>
-                <select>
-                    <option value="Black_Afican_American">Black/African American</option>
-                    <option value="Asian_PI">Asian or Pacific Islander</option>
-                    <option value="Caucasian_White">Caucasian/White</option> 
-                </select> 
-                <label id=ethnicity>Ethnicity</label>
-                <select>
-                    <option value="Hispanic">Hispanic</option>
-                    <option value="notHistpanic">Not Hispanic</option>
-                </select> 
+            <h1 class="homeTitle">Data Dashboard</h1>
+            <h2 class="intro">Please select which variables you want to include in your data visualization.</h2>
+            <div class="row"></div>
+            <h4 class="variableTitle">Variables</h4>
+            <div class="varCol">
+                <div class="demographics">
+                    <label id=gender>Gender</label>
+                        <select>
+                            <option value="male">Female</option>
+                            <option value="female">Male</option>  
+                        </select> 
+                    <label id=race>Race</label>
+                        <select>
+                            <option value="Black_Afican_American">Black/African American</option>
+                            <option value="Asian_PI">Asian or Pacific Islander</option>
+                            <option value="Caucasian_White">Caucasian/White</option> 
+                        </select> 
+                    <label id=ethnicity>Ethnicity</label>
+                        <select>
+                            <option value="Hispanic">Hispanic</option>
+                            <option value="notHistpanic">Not Hispanic</option>
+                        </select> 
+                        <span class="custom-arrow"></span>
+                </div>
+                <div class="variableTwo">
+                    <label id=thing1>Thing1</label>
+                        <select>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                        </select> 
+                    <label id=thing2>Thing2</label>
+                        <select>
+                            <option value="two">Something</option>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                        </select> 
+                    <label id=thing3>Thing3</label>
+                        <select>
+                            <option value="three">Something</option>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                        </select>
+                    <label id=thing4>Thing4</label>
+                        <select>
+                            <option value="four">Something</option>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                            <option value="one">Something</option>
+                        </select>
+                        <span class="custom-arrow"></span>
+                </div>
             </div>
-            <div class="variableTwo"></div>
+            <div class="vizCol">
+                <div class="dataViz">
+                <h4 class="graphsTitle">Graphs</h4>
+                    <p>Graphs will go here!</p>
+                    <!---Add graphs here-->
+                </div>
+            </div>
+            </div>
         </div>
-
 
     <!--- Footer /> -->
         <footer class="main-footer">

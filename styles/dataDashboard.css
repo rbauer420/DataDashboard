@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -65,7 +66,7 @@ body {
 
 /**.main-content**/
 
-.title {
+.homeTitle {
     position: relative;
     padding-top: 30px;
     padding-left: 30px;
@@ -75,15 +76,42 @@ body {
 }
 
 .intro {
+    margin-top: 2em;
     text-align: center;
 }
 
-.demographics {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    max-width: 50%;
+.row {
+    margin-top: .5em;
 }
+
+.graphsTitle,
+.variableTitle {
+    margin-top: 1em;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+select {
+    box-shadow: 0 10px 25px black;
+    font-size: 1rem;
+    padding: .25em .5em .25em .25em;
+    background-color: #4d5061;
+    color: ivory;
+    border: 0;
+    margin-top: 5%;
+
+}
+
+.demographics, 
+.variableTwo {
+    font-style: italic;
+  }
+
+#gender, #race, #ethnicity, #thing1, #thing2, #thing3, #thing4  {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 5%;
+  }
  
 /** Footer **/
 .main-footer {
