@@ -85,15 +85,19 @@
             <div class="vizCol">
                 <h4 class="graphsTitle">Graphs</h4>
                 <div class="dataViz">
-                <canvas id="myGraphs"></canvas>
+                <canvas id="firstGraph"></canvas>
+                <canvas id="secondGraph"></canvas>
+                <canvas id="thirdGraph"></canvas>
                 <script> 
-                    let myGraphs = document.getElementById("myGraphs").getContext('2d');
+                    let firstGraph = document.getElementById("firstGraph").getContext('2d');
+                    let secondGraph = document.getElementById("secondGraph").getContext('2d');
+                    let thirdGraph = document.getElementById("thirdGraph").getContext('2d');
 
                     //Global Chart Settings
                     Chart.defaults.global.defaultFontSize = 15;
                     Chart.defaults.global.defaultFontColor = "ivory";
         
-                    let locationChart = new Chart(myGraphs, {
+                    let locationChart = new Chart(firstGraph, {
                         type:"horizontalBar", 
                         data:{
                             labels:["Bank", "Residence Home", "Parking Garage/Lot", "Abandoned Condemned/Structure", "Air/Bus/Train Terminal", "Amusement Park", "Arena/Stadium/Fairgrounds",
@@ -108,7 +112,7 @@
                                 data:[109, 5497, 584, 8, 5, 3, 8, 1, 6, 115, 14, 13, 28, 9, 6, 0, 9, 260, 2, 110, 3, 65, 6, 36, 136, 2056, 177, 5, 95, 8, 47, 1, 201, 148, 6, 1, 148, 0, 39, 106, 270,
                                     19, 36, 87, 1, 278], 
                                 backgroundColor:"#4d5061",
-                                borderWidth: .5, 
+                                borderWidth: 1.5, 
                                 borderColor:"black",
                                 hoverBorderWidth: 1.5,
                                 hoverBorderColor:"goldenrod",
@@ -128,8 +132,75 @@
                             }
                         }
                     });
+            
+                        let weaponChart = new Chart(secondGraph, {
+                            type:"radar", 
+                            data:{
+                                labels:["Unknown", "None", "Other", "Firearm (Automatic)", "Handgun (Automatic)", "Rifle (Automatic)", "Rifle", "Shotgun (Automatic)", "Other Firearm (Automatic)",
+                                        "Pushed or Thrown Out Window", "Drowning", "Strangulation - Include Hanging", "Unarmed", "Firearm", "Handgun", "Shotgun", "Other Firearm", "Lethal Cutting Instrument",
+                                        "Club/Blackjack/Brass Knuckles", "Knife/Cutting Instrument", "Blunt Object", "Motor Vehicle", "Personal Weapons", "Poison", "Explosives", "Fire/Incendiary Device", 
+                                        "Drugs/Narcotics/Sleeping Pills", "Asphyxiation"],
+                                datasets:[{
+                                    label: "Total Times Weapon Was Used", 
+                                    data:[267, 667, 518, 4, 10, 2, 78, 1, 4, 0, 0, 0, 0, 583, 1971, 44, 35, 0, 0, 851, 626, 0, 2398, 2, 4, 19, 114, 603], 
+                                    
+                                    borderWidth: 1.5, 
+                                    borderColor: "black",
+                                    hoverBorderWidth: 1.5,
+                                    hoverBorderColor:"goldenrod",
+                                }]
+                            },
+                            options:{
+                                title:{
+                                    display:true,
+                                    text:"Total Number of Offenses by Location", 
+                                    fontSize: 15,
+                                },
+                                legend:{
+                                    display: false,
+                                    position:"right",
+                                    labels:{
+                                        fontColor:"white"
+                                    }
+                                }
+                            }
+                        });
+
+                        let relatChart = new Chart(thirdGraph, {
+                            type:"doughnut", 
+                            data:{
+                                labels:["Acquaintance", "Babysitter", "Boyfriend/Girlfriend", "Child of Boyfriend/Girlfriend", "Child", "Employee", "Employer", "Friend", "Grandchild", "Grandparent",
+                                        "In-Law", "Neighbor", "Other Family Member", "Otherwise Known", "Parent", "Relationship Unknown", "Sibling", "Stepchild", "Spouse", "Stepparent", "Stepsibling",
+                                        "Stranger", "Offender", "Ex Spouse", "Common Law Spouse"],
+                                datasets:[{
+                                    label: "Total Offenses By Relationship Type", 
+                                    data:[2032, 16, 1040, 54, 388, 9, 6, 359, 37, 16, 20, 167, 270, 779, 125, 1020, 144, 66, 304, 19, 19, 3042, 53, 57, 12], 
+                                    backgroundColor:"#4d5061",
+                                    borderWidth: 1.5, 
+                                    borderColor: "black",
+                                    hoverBorderWidth: 1.5,
+                                    hoverBorderColor:"goldenrod",
+                                }]
+                            },
+                            options:{
+                                title:{
+                                    display:true,
+                                    text:"Total Number of Offenses by Suspect's Relationship with Victim", 
+                                    fontSize: 15,
+                                },
+                                legend:{
+                                    display: false,
+                                    position:"right",
+                                    labels:{
+                                        fontColor:"white"
+                                    }
+                                }
+                            }
+                        });
+
+                    </script>
+                    </div>
                 </script>
-            <!---Add graphs here-->
             </div>
        </div>
        </div>
