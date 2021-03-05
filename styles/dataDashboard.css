@@ -66,6 +66,7 @@ body {
 
 .main-content {
     background-color: lightslategray;
+    padding-left: 3rem;
 }
 
 .homeTitle {
@@ -94,11 +95,18 @@ body {
     margin-top: 1em;
     font-size: 2rem;
     font-weight: bolder;
-    color: yellowgreen;
+    color: teal;
     text-shadow: 1px 1px 3px black;
 }
 
+.graphsTitle {
+    text-align: center;
+}
+
+
 select {
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 10px 25px black;
     font-size: 1rem;
     padding: .25em .5em .25em .25em;
@@ -112,13 +120,21 @@ select {
 .demographics, 
 .variableTwo {
     font-style: italic;
-    color: teal;
+    color: yellowgreen;
+    text-shadow: 1px 1px 3px black;
   }
 
 #gender, #race, #ethnicity, #thing1, #thing2, #thing3, #thing4  {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     padding-left: 5%;
+    padding-top: 10%;
+  }
+
+  .vizCol {
+      width: 75%;
+      padding-left: 1rem;
+      padding-bottom: 5rem;
   }
  
 /** Footer **/
@@ -219,6 +235,7 @@ textarea {
         visibility: visible;
         flex-direction: column;
     }
+
 
     .title{
         display: flex;
