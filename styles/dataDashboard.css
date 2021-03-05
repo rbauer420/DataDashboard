@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -61,16 +60,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     line-height: 1.6;
-    background-color: lightslategray;
 }
 
 /**.main-content**/
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    line-height: 1.6;
     background-color: lightslategray;
 }
 
@@ -87,27 +81,12 @@ body {
     margin-top: 2em;
     text-align: center;
     color: goldenrod;
-    text-shadow: 2px 2px 4px black; 
+    text-shadow: 2px 2px 4px black;
+    
 }
 
 .row {
     margin-top: .5em;
-}
-
-.varCol {
-    position: relative;
-    flex: 70%;
-    align-self: flex-start;
-    padding-right: 1em;
-    padding-left: 1em;  
-}
-
-.vizCol {
-    position: relative;
-    flex: 30%;
-    align-self: flex-start;
-    padding-right: 1em;
-    padding-left: 1em; 
 }
 
 .graphsTitle,
@@ -127,11 +106,11 @@ select {
     color: ivory;
     border: 0;
     margin-top: 5%;
+
 }
 
 .demographics, 
 .variableTwo {
-    flex: content;
     font-style: italic;
     color: teal;
   }
@@ -140,14 +119,6 @@ select {
     font-size: 1rem;
     font-weight: bold;
     padding-left: 5%;
-  }
-
-  #gender, #race, #ethnicity {
-    padding-top: 2.5%;
-  }
-
-  #thing1, #thing2, #thing3, #thing4  {
-    padding-top: 5%;
   }
  
 /** Footer **/
@@ -283,5 +254,4 @@ textarea {
 }
     
 /**@media only screen and (min-width: 1140px) {
-
 } **/
