@@ -117,14 +117,15 @@ select {
 
 }
 
-.demographics, 
-.variableTwo {
+.vicDemographics, 
+.suspectDemographics {
     font-style: italic;
     color: yellowgreen;
     text-shadow: 1px 1px 3px black;
   }
 
-#gender, #race, #ethnicity, #thing1, #thing2, #thing3, #thing4  {
+#genderVic, #raceVic, #ethnicityVic, #ageVic, 
+#genderSuspect, #raceSuspect, #ethnicitySuspect, #ageSuspect  {
     font-size: 1.25rem;
     font-weight: bold;
     padding-left: 5%;
