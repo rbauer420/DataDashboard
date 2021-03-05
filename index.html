@@ -6,9 +6,9 @@
         </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./styles/dataDashboard.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./styles/dataDashboard.css" />
     </head>
 
     <body>
@@ -111,13 +111,25 @@
             <div class="vizCol">
                 <h4 class="graphsTitle">Graphs</h4>
                 <div class="dataViz">
-                <canvas id="firstGraph"></canvas>
-                <canvas id="secondGraph"></canvas>
+                    <div class="canvas-outer-bar">
+                        <div class="canvas-inner">
+                            <canvas id="firstGraph"></canvas>
+                        </div>
+                    </div>
+                    <div class="canvas-outer-radar">
+                        <div class="canvas-inner">
+                            <canvas id="secondGraph"></canvas>
+                        </div>
+                    </div>
+
+                
                 <canvas id="thirdGraph"></canvas>
                 <script> 
                     let firstGraph = document.getElementById("firstGraph").getContext('2d');
                     let secondGraph = document.getElementById("secondGraph").getContext('2d');
                     let thirdGraph = document.getElementById("thirdGraph").getContext('2d');
+
+                    document.getElementById("firstGraph").height = 400;
 
                     //Global Chart Settings
                     Chart.defaults.global.defaultFontSize = 15;

@@ -63,11 +63,11 @@ body {
 }
 
 /**.main-content**/
-
-.main-content {
-    background-color: lightslategray;
-    padding-left: 3rem;
-}
+  
+  .main-content {
+        background-color: lightslategray;
+        padding: 0 2rem;
+  }
 
 .homeTitle {
     position: relative;
@@ -88,6 +88,7 @@ body {
 
 .row {
     margin-top: .5em;
+    display: block;
 }
 
 .graphsTitle,
@@ -131,11 +132,10 @@ select {
     padding-left: 5%;
     padding-top: 10%;
   }
-
+  
   .vizCol {
-      width: 75%;
-      padding-left: 1rem;
-      padding-bottom: 5rem;
+        width: 100%;
+        padding: 0 0 5rem;
   }
  
 /** Footer **/
@@ -215,6 +215,28 @@ textarea {
     transition: all 0.5s ease;
   } 
 
+  .canvas-outer-bar {
+        position: relative;
+        max-width: 100%;
+        overflow-x: scroll;
+  }
+
+  .canvas-outer-bar .canvas-inner {
+        width: 800px;
+        overflow-x: scroll;
+  }
+
+  .canvas-outer-radar {
+        position: relative;
+        max-width: 100%;
+        overflow-x: scroll;
+  }
+
+  .canvas-outer-radar .canvas-inner {
+        width: 800px;
+        overflow-x: scroll;
+  }
+
   /** Media Queries **/
 
 @media only screen and (max-width: 500px) {
@@ -237,27 +259,23 @@ textarea {
         flex-direction: column;
     }
 
-
     .title{
         display: flex;
         flex-direction: column;
     }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
 }
 
-@media only screen and (min-width: 768px),
-       only screen and (min-width: 700px) and (orientation: landscape) {
+@media only screen and (min-width: 865px) {
         
     .main-header {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             padding: 30px 10%;
+    }
+  
+    .main-content {
+        padding-left: 3rem;
     }
         
     .nav_links li {
@@ -267,6 +285,36 @@ textarea {
     .row {
         display: flex;
         flex-direction: row;
+    }
+  
+    .vizCol {
+        width: 75%;
+        padding-left: 1rem;
+        padding-bottom: 5rem;
+    }
+  
+    .canvas-outer-bar {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        overflow-x: scroll;
+    }
+  
+    .canvas-outer-bar .canvas-inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .canvas-outer-radar {
+          position: relative;
+          max-width: 100%;
+          height: auto;
+          overflow-x: scroll;
+    }
+    
+    .canvas-outer-radar .canvas-inner {
+          width: 100%;
+          height: auto;
     }
 
 }
