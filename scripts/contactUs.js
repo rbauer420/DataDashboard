@@ -2,15 +2,15 @@
 
 
 /**Contact Form */
-function validate() {
+function validate(){
 
   //Form input variables 
-  let userName = document.getElementById("userName").value;
-  let subject = document.getElementById("subject").value;
-  let phone = document.getElementById("phone").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
-  let errorMessage = document.getElementById("errorMessage");
+  var userName = document.getElementById("userName").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var errorMessage = document.getElementById("errorMessage");
   
   errorMessage.style.padding = "10px"; 
 
@@ -30,25 +30,30 @@ function validate() {
 
 
   //Error message array
-  let errorMessageOptions = ["Please enter your first and last name",
+  let errorMessageOptions = ["Please enter your first and last name using only letters a-z.",
     "Your subject can only contain letters a-z", 
     "You must enter a telephone number in the format of (555) 555-5555", 
     "You must enter a valid email address",
     "Please enter more than 10 characters in your message"];
 
+    var text;
     if (userName != userNameInput) {
       errorMessage.innerHTML = errorMessageOptions[0];
       return false;
-    } else if (subject != subjectInput) {
+    } 
+    if (subject != subjectInput) {
       errorMessage.innerHTML = errorMessageOptions[1];
       return false;
-    } else if (phone != phoneInput) {
+    } 
+    if (phone != phoneInput) {
       errorMessage.innerHTML = errorMessageOptions[2];
       return false;
-    } else if (email != emailInput) {
+    }
+    if (email != emailInput) {
       errorMessage.innerHTML = errorMessageOptions[3];
       return false;
-    } else if (message != messageInput) {
+    }
+    if (message != messageInput) {
       errorMessage.innerHTML = errorMessageOptions[4];
       return false;
     } 
