@@ -111,25 +111,24 @@
             <div class="vizCol">
                 <h4 class="graphsTitle">Graphs</h4>
                 <div class="dataViz">
-                    <div class="canvas-outer-bar">
-                        <div class="canvas-inner">
+                    <div class="canvas-outer-bar" style="width: 100%;height: 80vh;">
                             <canvas id="firstGraph"></canvas>
                         </div>
                     </div>
-                    <div class="canvas-outer-radar">
-                        <div class="canvas-inner">
+                    <div class="canvas-outer-radar" style="width: 100%;height: 80vh;">
                             <canvas id="secondGraph"></canvas>
                         </div>
                     </div>
+                    <div class="canvas-outer-doughnut" style="width: 100%;height: 80vh;">
+                            <canvas id="thirdGraph"></canvas>
+                        </div>
+                    </div>
 
-                
-                <canvas id="thirdGraph"></canvas>
                 <script> 
                     let firstGraph = document.getElementById("firstGraph").getContext('2d');
                     let secondGraph = document.getElementById("secondGraph").getContext('2d');
                     let thirdGraph = document.getElementById("thirdGraph").getContext('2d');
 
-                    document.getElementById("firstGraph").height = 400;
 
                     //Global Chart Settings
                     Chart.defaults.global.defaultFontSize = 15;
@@ -157,6 +156,8 @@
                             }]
                         },
                         options:{
+                            responsive: true,
+                            maintainAspectRatio: false,
                             title:{
                                 display:true,
                                 text:"Total Number of Offenses by Location", 
@@ -172,7 +173,7 @@
                     });
             
                         let weaponChart = new Chart(secondGraph, {
-                            type:"radar", 
+                            type:"line", 
                             data:{
                                 labels:["Unknown", "None", "Other", "Firearm (Automatic)", "Handgun (Automatic)", "Rifle (Automatic)", "Rifle", "Shotgun (Automatic)", "Other Firearm (Automatic)",
                                         "Pushed or Thrown Out Window", "Drowning", "Strangulation - Include Hanging", "Unarmed", "Firearm", "Handgun", "Shotgun", "Other Firearm", "Lethal Cutting Instrument",
@@ -189,6 +190,8 @@
                                 }]
                             },
                             options:{
+                                responsive: true,
+                                maintainAspectRatio: false,
                                 title:{
                                     display:true,
                                     text:"Total Number of Offenses by Location", 
@@ -221,6 +224,8 @@
                                 }]
                             },
                             options:{
+                                responsive: true,
+                                maintainAspectRatio: false,
                                 title:{
                                     display:true,
                                     text:"Total Number of Offenses by Suspect's Relationship with Victim", 
@@ -250,6 +255,9 @@
                 <a href="https://crime-data-explorer.fr.cloud.gov/explorer/state/kentucky/crime" style="color:darkblue", target="_blank>">Data Source: FBI's Crime Data Explorer</a>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="./scripts/dataDashboard.js"></script>
     </body>
 </html>

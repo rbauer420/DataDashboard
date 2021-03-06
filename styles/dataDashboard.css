@@ -52,6 +52,10 @@ button {
     opacity: 0.5;
 }
 
+#toggle {
+    display: none;
+}
+
 
 /** Main Body **/
 
@@ -135,8 +139,9 @@ select {
   
   .vizCol {
         width: 100%;
-        padding: 0 0 5rem;
+        padding: 0 0 5rem 0;
   }
+
  
 /** Footer **/
 .main-footer {
@@ -215,31 +220,9 @@ textarea {
     transition: all 0.5s ease;
   } 
 
-  .canvas-outer-bar {
-        position: relative;
-        max-width: 100%;
-        overflow-x: scroll;
-  }
-
-  .canvas-outer-bar .canvas-inner {
-        width: 800px;
-        overflow-x: scroll;
-  }
-
-  .canvas-outer-radar {
-        position: relative;
-        max-width: 100%;
-        overflow-x: scroll;
-  }
-
-  .canvas-outer-radar .canvas-inner {
-        width: 800px;
-        overflow-x: scroll;
-  }
-
   /** Media Queries **/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
     .main-header
     .nav_links
     .button {
@@ -253,16 +236,22 @@ textarea {
         cursor: pointer;
     }
 
-    #toggle:checked + .nav_links {
+    .nav_links {
         display: flex;
         visibility: visible;
         flex-direction: column;
+    }
+
+    .nav_links {
+        display: none;
     }
 
     .title{
         display: flex;
         flex-direction: column;
     }
+
+
 }
 
 @media only screen and (min-width: 865px) {
@@ -292,32 +281,6 @@ textarea {
         padding-left: 1rem;
         padding-bottom: 5rem;
     }
-  
-    .canvas-outer-bar {
-        position: relative;
-        max-width: 100%;
-        height: auto;
-        overflow-x: scroll;
-    }
-  
-    .canvas-outer-bar .canvas-inner {
-        width: 100%;
-        height: auto;
-    }
-
-    .canvas-outer-radar {
-          position: relative;
-          max-width: 100%;
-          height: auto;
-          overflow-x: scroll;
-    }
-    
-    .canvas-outer-radar .canvas-inner {
-          width: 100%;
-          height: auto;
-    }
-
-}
-    
+}   
 /**@media only screen and (min-width: 1140px) {
 } **/
