@@ -27,8 +27,7 @@ function showGenderVic() {
 }
   
   window.addEventListener("load", () => { 
-    document.getElementById("selectGenderVic").addEventListener("change",showGenderVic); 
-    showGenderVic();
+    document.getElementById("selectGenderVic").addEventListener("change",showGenderVic);
   });
 
 
@@ -71,8 +70,7 @@ function showGenderVic() {
 }
   
   window.addEventListener("load", () => { 
-    document.getElementById("selectRaceVic").addEventListener("change",showRaceVic); 
-    showRaceVic();
+    document.getElementById("selectRaceVic").addEventListener("change",showRaceVic);
   });
 
 
@@ -103,12 +101,11 @@ function showEthnicityVic() {
 }
   
   window.addEventListener("load", () => { 
-    document.getElementById("selectEthnicityVic").addEventListener("change",showEthnicityVic); 
-    showEthnicityVic(); 
+    document.getElementById("selectEthnicityVic").addEventListener("change",showEthnicityVic);
   });
 
 
-    //Display Values from user input - Victim Age 
+//Display Values from user input - Victim Age 
 function showAgeVic() {
 
     resultAgeVic = document.getElementById("resultAgeVic");
@@ -167,8 +164,7 @@ function showAgeVic() {
 }
     
     window.addEventListener("load", () => {
-    document.getElementById("selectAgeVic").addEventListener("change",showAgeVic); 
-    showAgeVic(); 
+    document.getElementById("selectAgeVic").addEventListener("change",showAgeVic);
     });
 
 
@@ -200,7 +196,6 @@ function showGenderSuspect() {
   
   window.addEventListener("load", () => { 
     document.getElementById("selectGenderSuspect").addEventListener("change",showGenderSuspect); 
-    showGenderVic();
   });
 
 
@@ -243,8 +238,7 @@ function showGenderSuspect() {
 }
   
   window.addEventListener("load", () => { 
-    document.getElementById("selectRaceSuspect").addEventListener("change",showRaceSuspect); 
-    showRaceSuspect();
+    document.getElementById("selectRaceSuspect").addEventListener("change",showRaceSuspect);
   });
 
 
@@ -276,7 +270,6 @@ function showEthnicitySuspect() {
   
   window.addEventListener("load", () => { 
     document.getElementById("selectEthnicitySuspect").addEventListener("change",showEthnicitySuspect); 
-    showEthnicitySuspect(); 
   });
 
 
@@ -340,5 +333,4 @@ function showAgeSuspect() {
     
     window.addEventListener("load", () => {
     document.getElementById("selectAgeSuspect").addEventListener("change",showAgeSuspect); 
-    showAgeSuspect(); 
     });

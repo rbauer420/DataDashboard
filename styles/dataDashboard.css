@@ -108,6 +108,7 @@ body {
     text-align: center;
 }
 
+/**Variable Selectors**/
 select {
     display: flex;
     flex-direction: column;
@@ -141,8 +142,7 @@ select {
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   } 
 
   #resultRaceVic {
@@ -150,8 +150,7 @@ select {
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   } 
 
   #resultEthnicityVic {
@@ -159,8 +158,7 @@ select {
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   } 
 
   #resultAgeVic {
@@ -168,8 +166,7 @@ select {
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   } 
 
   #resultGenderSuspect {
@@ -177,8 +174,7 @@ select {
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   } 
 
   #resultRaceSuspect {
@@ -186,8 +182,7 @@ select {
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   } 
 
   #resultEthnicitySuspect {
@@ -195,8 +190,7 @@ select {
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   } 
 
   #resultAgeSuspect {
@@ -204,14 +198,20 @@ select {
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
-    padding-left: 5%;
-    padding-top: 10%;
+    margin-top: 10%;
   } 
 
-  
+/**Data Viz Content**/  
   .vizCol {
         width: 100%;
         padding: 0 0 5rem 0;
+  }
+
+  #firstGraph,
+  #secondGraph,
+  #thirdGraph {
+      margin-top: 5%;
+      margin-bottom: 1rem;
   }
 
  
@@ -352,6 +352,11 @@ textarea {
         width: 75%;
         padding-left: 1rem;
         padding-bottom: 5rem;
+    }
+
+    .canvas-outer-doughnut, #thirdGraph {
+        margin-top: .5rem;
+        margin-bottom: 5rem;
     }
 }   
 /**@media only screen and (min-width: 1140px) {
