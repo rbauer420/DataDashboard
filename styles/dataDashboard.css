@@ -108,7 +108,6 @@ body {
     text-align: center;
 }
 
-
 select {
     display: flex;
     flex-direction: column;
@@ -136,6 +135,79 @@ select {
     padding-left: 5%;
     padding-top: 10%;
   }
+
+  #resultGenderVic {
+    background: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 10%;
+  } 
+
+  #resultRaceVic {
+    background: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 10%;
+  } 
+
+  #resultEthnicityVic {
+    background: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 10%;
+  } 
+
+  #resultAgeVic {
+    background: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 10%;
+  } 
+
+  #resultGenderSuspect {
+    background: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 10%;
+  } 
+
+  #resultRaceSuspect {
+    background: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 10%;
+  } 
+
+  #resultEthnicitySuspect {
+    background: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 10%;
+  } 
+
+  #resultAgeSuspect {
+    background: black;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 10%;
+  } 
+
   
   .vizCol {
         width: 100%;

@@ -34,29 +34,43 @@
             <div class="varCol">
             <h4 class="variableTitle">Variables</h4>
                 <div class="vicDemographics">
+                    <div class="selectGenderVic">
                     <label id=genderVic>Victim Gender</label>
-                        <select>
-                            <option value="male">Female</option>
-                            <option value="female">Male</option>
+                        <select name="selectGenderVic" id="selectGenderVic">
+                            <option disabled hidden selected>Select</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
                             <option value="genderUnknown">Gender Unknown</option>  
-                        </select> 
+                        </select>
+                        <div id="resultGenderVic"></div>
+                    </div>
+                    <div class="selectRaceVic">
                     <label id=raceVic>Victim Race</label>
-                        <select>
+                        <select name="selectRaceVic" id="selectRaceVic">
+                            <option disabled hidden selected>Select</option>
                             <option value="Asian">Asian</option>
                             <option value="NativeHawaiian">Native Hawaiian</option>
                             <option value="Black_Afican_American">Black/African American</option>
                             <option value="AmericanIndian_AlaskaNative">American Indian/Alaska Native</option>
                             <option value="Caucasian_White">Caucasian/White</option> 
                             <option value="raceUnknown">Race Unknown</option>
-                        </select> 
+                        </select>
+                        <div id="resultRaceVic"></div>
+                    </div> 
+                    <div class="selectEthnicityVic">
                     <label id=ethnicityVic>Victim Ethnicity</label>
-                        <select>
+                        <select name="selectEthnicityVic" id="selectEthnicityVic">
+                            <option disabled hidden selected>Select</option>
                             <option value="Hispanic">Hispanic</option>
                             <option value="notHistpanic">Not Hispanic</option>
                             <option value="ethnicityUnknown">Not Hispanic</option>
-                        </select> 
+                        </select>
+                        <div id="resultEthnicityVic"></div>
+                    </div> 
+                    <div class="selectAgeVic">
                     <label id=ageVic>Victim Age</label>
-                        <select>
+                        <select name="selectAgeVic" id="selectAgeVic">
+                            <option disabled hidden selected>Select</option>
                             <option value="zeroToNine">0 to 9 years old</option>
                             <option value="tenToNineteen">10 to 19 years old</option>
                             <option value="twentyToTwentynine">20 to 29 years old</option>
@@ -69,16 +83,24 @@
                             <option value="ninteyOrOlder">90 years old or older</option>
                             <option value="ageUnknown">Age Unknown</option>
                         </select>
+                        <div id="resultAgeVic"></div>
+                    </div>
                 </div>
                 <div class="suspectDemographics">
+                    <div class="selectGenderSuspect">
                     <label id=genderSuspect>Suspect Gender</label>
-                        <select>
-                            <option value="male">Female</option>
-                            <option value="female">Male</option>
+                        <select name="selectGenderSuspect" id="selectGenderSuspect">
+                            <option disabled hidden selected>Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
                             <option value="genderUnknown">Gender Unknown</option>  
                         </select> 
+                        <div id="resultGenderSuspect"></div>
+                    </div>
+                    <div class="selectRaceSuspect">
                     <label id=raceSuspect>Suspect Race</label>
-                        <select>
+                        <select name="selectRaceSuspect" id="selectRaceSuspect">
+                            <option disabled hidden selected>Select</option>
                             <option value="Asian">Asian</option>
                             <option value="NativeHawaiian">Native Hawaiian</option>
                             <option value="Black_Afican_American">Black/African American</option>
@@ -86,14 +108,22 @@
                             <option value="Caucasian_White">Caucasian/White</option> 
                             <option value="raceUnknown">Race Unknown</option>
                         </select> 
+                        <div id="resultRaceSuspect"></div>
+                    </div>
+                    <div class="selectEthnicitySuspect">
                     <label id=ethnicitySuspect>Suspect Ethnicity</label>
-                        <select>
+                        <select name="selectEthnicitySuspect" id="selectEthnicitySuspect">
+                            <option disabled hidden selected>Select</option>
                             <option value="Hispanic">Hispanic</option>
                             <option value="notHistpanic">Not Hispanic</option>
                             <option value="ethnicityUnknown">Not Hispanic</option>
                         </select> 
+                        <div id="resultEthnicitySuspect"></div>
+                    </div>
+                    <div class="selectAgeSuspect">
                     <label id=ageSuspect>Suspect Age</label>
-                        <select>
+                        <select name="selectAgeSuspect" id="selectAgeSuspect">
+                            <option disabled hidden selected>Select</option>
                             <option value="zeroToNine">0 to 9 years old</option>
                             <option value="tenToNineteen">10 to 19 years old</option>
                             <option value="twentyToTwentynine">20 to 29 years old</option>
@@ -106,6 +136,8 @@
                             <option value="ninteyOrOlder">90 years old or older</option>
                             <option value="ageUnknown">Age Unknown</option>
                         </select>
+                        <div id="resultAgeSuspect"></div>
+                    </div>
                 </div>
             </div>
             <div class="vizCol">
