@@ -16,6 +16,8 @@
     <!--- Navigation Bar /> -->
         <header class="main-header">
             <nav>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
                 <ul class="nav_links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#" aria-disabled="true" class="isDisabled">About Project</a></li>
@@ -163,7 +165,7 @@
 
 
                     //Global Chart Settings
-                    Chart.defaults.global.defaultFontSize = 15;
+                    Chart.defaults.global.defaultFontSize = 14;
                     Chart.defaults.global.defaultFontColor = "ivory";
         
                     let locationChart = new Chart(firstGraph, {
