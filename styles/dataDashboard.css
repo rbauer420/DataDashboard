@@ -75,7 +75,7 @@ body {
 
 /**.main-content**/
   
-  .main-content {
+.main-content {
         background-color: lightslategray;
         padding: 0 2rem;
   }
@@ -89,12 +89,19 @@ body {
     text-shadow: 4px 4px 5px black;
 }
 
-.intro {
+.intro,
+.instructions {
     margin-top: 2em;
     text-align: center;
     color: goldenrod;
-    text-shadow: 2px 2px 4px black;
-    
+    text-shadow: 2px 2px 4px black;  
+}
+
+.instructions {
+    margin-top: 2em;
+    text-align: center;
+    color: orangered;
+    text-shadow: 1px 1px 3px black;
 }
 
 .row {
@@ -145,7 +152,7 @@ select {
   }
 
   #resultGenderVic {
-    background: black;
+    background: darkslateblue;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
@@ -153,7 +160,7 @@ select {
   } 
 
   #resultRaceVic {
-    background: black;
+    background: darkslateblue;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
@@ -161,7 +168,7 @@ select {
   } 
 
   #resultEthnicityVic {
-    background: black;
+    background: darkslateblue;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
@@ -169,7 +176,7 @@ select {
   } 
 
   #resultAgeVic {
-    background: black;
+    background: darkslateblue;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
@@ -177,7 +184,7 @@ select {
   } 
 
   #resultGenderSuspect {
-    background: black;
+    background: darkslateblue;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
@@ -185,7 +192,7 @@ select {
   } 
 
   #resultRaceSuspect {
-    background: black;
+    background: darkslateblue;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
@@ -193,7 +200,7 @@ select {
   } 
 
   #resultEthnicitySuspect {
-    background: black;
+    background: darkslateblue;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
@@ -201,7 +208,7 @@ select {
   } 
 
   #resultAgeSuspect {
-    background: black;
+    background: darkslateblue;
     text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
