@@ -62,5 +62,3 @@ function validate(){
       return true;
 
   }
-
-
