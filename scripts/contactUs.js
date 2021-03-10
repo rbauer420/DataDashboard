@@ -60,7 +60,7 @@ function validate(){
 
     fetch("https://api.apispreadsheets.com/data/9192/", {
       method: "POST",
-      body: JSON.stringify({"data": {"email":"emailInput","phone":"phoneInput","message":"messageInput","subject":"subjectInput","userName":"userNameInput"}}),
+      body: JSON.stringify({"data": {"email":emailInput,"phone":phoneInput,"message":messageInput,"subject":subjectInput,userName:userNameInput}}),
     }).then(res =>{
       if (res.status === 201){
         // SUCCESS
