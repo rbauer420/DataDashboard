@@ -58,6 +58,17 @@ function validate(){
       return false;
     } 
 
+    fetch("https://api.apispreadsheets.com/data/9192/", {
+      method: "POST",
+      body: JSON.stringify({"data": {"email":"emailInput","phone":"phoneInput","message":"messageInput","subject":"subjectInput","userName":"userNameInput"}}),
+    }).then(res =>{
+      if (res.status === 201){
+        // SUCCESS
+      }
+      else{
+        // ERROR
+      }
+    })
       alert("Your contact form was submitted successfully" + " " + userName + "! We will respond as soon as possible!");
       return true;
 

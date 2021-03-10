@@ -269,6 +269,10 @@ select {
     text-shadow: 4px 4px 5px black;
 }
 
+fieldset { 
+    border:0px;
+}
+
 .input_field {
     margin-bottom: 10px; 
 }
