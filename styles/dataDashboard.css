@@ -340,6 +340,10 @@ textarea {
         display: flex;
         flex-direction: column;
     }
+
+    .contactUsForm {
+        margin-top: 5px;
+    }
 }
 
 @media only screen and (min-width: 768px),
