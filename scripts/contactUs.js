@@ -1,5 +1,17 @@
-//Hamburger Menu//
-
+//Post Contact Form to API
+function subForm(){
+  fetch("https://api.apispreadsheets.com/data/9192/", {
+    method: "POST",
+    body: JSON.stringify({"data": {"email":"value","phone":"value","message":"value","subject":"value","userName":"value"}}),
+  }).then(res =>{
+    if (res.status === 201){
+      alert("Your Contact Form Data Was Saved!")
+    }
+    else{
+      alert("Huston, We Have A Problem! Your Contact Form Data Was NOT Saved!")
+    }
+  });
+}
 
 /**Contact Form */
 function validate(){
@@ -57,8 +69,15 @@ function validate(){
       errorMessage.innerHTML = errorMessageOptions[4];
       return false;
     } 
+    alert("Your contact form was submitted successfully" + " " + userName + "! We will respond as soon as possible!");
+    return subForm(); 
+}
 
-      alert("Your contact form was submitted successfully" + " " + userName + "! We will respond as soon as possible!");
-      return true;
-
-  }
+//Reformat Phone 
+function formatPhone() {
+  let number = document.getElementById("phone");
+  number.addEventListener("keyup", function(event) {
+      let n = this.value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+      number.value = n;
+  });
+}
