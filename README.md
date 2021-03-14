@@ -1,8 +1,25 @@
-# DataDashboard
-(Title) 
+# DataDashboard 
 
 ***About Website***
+This website is a Data Dashboard that visualizes data from the Federal Bureau of Investigation's Crime Data Explorer. The website also includes a contact form that posts user entered data to an API CSV file. 
 
+***Features List***
+This project includes the following features:
+
+(1) Post to an external API and show that it has saved/persisted
+
+(2) Create a form and save the values (on click of Submit button) to an external file 
+You must show us or document where that information is being stored so we can confirm that it’s being saved/persisted
+
+(3) Create an array, dictionary or list, populate it with multiple values, retrieve at least one value, and use or display it in your application
+
+(4) Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
+
+(5) Visualize data in a graph, chart, or other visual representation of data
+
+TO DO (6) Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
+
+TO DO (7) Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
 
 
 
@@ -10,35 +27,46 @@
 
 Hovering the mouse over each of the navigation links with change the color of the text from whitesmoke to clue and the mouse will turn into a pointer.
 
-As the screen size gets smaller, the navigation links begin to wrap and then at the 500px max breaking point, the navigation links will collapse into a hamburger menu and the logo will center over the "contact" button at the bottom of the header. The navigation links will reappear once the user selects the hamburger menu icon. At the min width of 768px and 700px (orientation: landscape), the navigation links will be in a single column.  
-
-At the max width break point of 500px, the navigation links will be hidden in a hamburger menu. If the user clicks on the three lines, the navigation links 
-will re-appear. 
+As the screen size gets smaller, the navigation links begin to wrap and then at the 500px max breaking point, the navigation links will collapse into a hamburger menu. The navigation links will reappear once the user selects the hamburger menu icon. At the min width of 768px and 700px (orientation: landscape), the navigation links will be in a single column.  
 
 *Note, these same features are repeated across all pages
 
 
 ***Footer***
 
-  The footer contains copyright information.
+  The footer contains copyright information and on the main page, the source of the data included in the dashboard.
 
 
 ***Homepage***
 
-See files: index.html 
+See files: index.html, dataDashboard.js and dataDashboard.css
+
+This page contains all of the data used in the data dashboard displayed in multiple ways.  
+
+In the first column (the "Variables" column), the users can select a variable from the dropdown button and below the dropdown menu, the page will display the total count for that variable (e.g. how many victims identified as female) that has been pulled from an array based on the users selection.
+
+In the second column there are three graphs (horizontal bar, line and a doughnut graph).  The labels on the x-axis will be displayed on the horizontal bar and the line graph.  When the user hovers over the bar on the first graph, the circle on the line graph or any section/slice of the doughnut graph a popup will display with the data label and the total. The outline of the bar, the circle on the line graph or the section/slice of the doughnut graph will change color from dark gray to gold. 
+
+As the screen size gets smaller, both columns will reduce in size and then collapse from two columns to one column. The graphs will be responsive to the size of the screen to display the entire graph. 
 
  
 
 ***Contact Page***
 
-See files: form.html, BauerBrewing.css and BauerBrewing.js
+See files: contact.html, contactUs.js and dataDashboard.css
 
-This page contains the contact form for the site and includes JS validation. 
+This page contains the contact form for the site and includes regex validation. Error messages are pulled from an array based on which entry fails to pass the programmed regex.
 
-If the user enters a name less than five characters, a red, error message will display under the header saying, "Please Enter a Valid Name". 
+If the user enters a name with numbers, a red, error message will display under the header saying, "Please enter your first and last name using only letters a-z".
 
-If the user enters an email without a "@" or the email less than six characters, a red, error message will display under the header saying, "Please Enter a Valid Email". 
+If the user enters a subject with numbers, a red, error message will display under the header saying, "Your subject can only contain letters a-z". 
+
+If the user enters an ivalid phone number, a red, error message will display under the header saying, "You must enter a telephone number in the format of (555) 555-5555".
+
+If the user enters an invalid email address, error message will display under the header saying, "You must enter a valid email address". 
 
 If the user enters a message less than ten characters, a red, error message will display under the header saying, "Please Enter More Than 10 Characters in Your Message". 
 
-If the user enters everything according to the validation, the form will submit and an alert will post saying, "Your contact form was submitted successfully! I will respond as soon as possible!" 
+If the user enters everything according to the validation, the form will submit and an alert will post saying, ""Your contact form was submitted successfully (name user entered)! We will respond as soon as possible!"
+
+The information entered in the contact form will be posted to an API CSV file. Please see Code Louisville Project Form for API information. 
