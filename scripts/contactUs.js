@@ -15,7 +15,7 @@ function subForm(){
 
 document.getElementById('myform').addEventListener('submit', (e) => {
   e.preventDefault();
-  validate();
+  validate().then(() => e.target.submit());
 });
 
 /**Contact Form */
@@ -75,7 +75,7 @@ function validate(){
       return false;
     } 
     
-    const response = subForm().then((response) => {
+    return subForm().then(() => {
       alert("Your contact form was submitted successfully" + " " + userName + "! We will respond as soon as possible!");
     });
 }
