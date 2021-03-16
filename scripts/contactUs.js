@@ -1,6 +1,6 @@
 //Post Contact Form to API
 function subForm(){
-  fetch("https://api.apispreadsheets.com/data/9192/", {
+  return fetch("https://api.apispreadsheets.com/data/9192/", {
     method: "POST",
     body: JSON.stringify({"data": {"email":"value","phone":"value","message":"value","subject":"value","userName":"value"}}),
   }).then(res =>{
@@ -12,6 +12,11 @@ function subForm(){
     }
   });
 }
+
+document.getElementById('myform').addEventListener('submit', (e) => {
+  e.preventDefault();
+  validate();
+});
 
 /**Contact Form */
 function validate(){
@@ -69,8 +74,10 @@ function validate(){
       errorMessage.innerHTML = errorMessageOptions[4];
       return false;
     } 
-    alert("Your contact form was submitted successfully" + " " + userName + "! We will respond as soon as possible!");
-    return subForm(); 
+    
+    const response = subForm().then((response) => {
+      alert("Your contact form was submitted successfully" + " " + userName + "! We will respond as soon as possible!");
+    });
 }
 
 //Reformat Phone 
