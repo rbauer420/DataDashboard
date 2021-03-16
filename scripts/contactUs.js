@@ -1,8 +1,14 @@
 //Post Contact Form to API
 function subForm(){
+  var userName = document.getElementById("userName").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
   return fetch("https://api.apispreadsheets.com/data/9192/", {
     method: "POST",
-    body: JSON.stringify({"data": {"email":"value","phone":"value","message":"value","subject":"value","userName":"value"}}),
+    body: JSON.stringify({"data": {"email": email,"phone": phone ,"message": message,"subject":subject,"userName":userName}}),
   }).then(res =>{
     if (res.status === 201){
       alert("Your Contact Form Data Was Saved!")
