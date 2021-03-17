@@ -69,4 +69,6 @@ If the user enters a message less than ten characters, a red, error message will
 
 If the user enters everything according to the validation, the form will submit and an alert will post saying, ""Your contact form was submitted successfully (name user entered)! We will respond as soon as possible!"
 
-The information entered in the contact form will be posted to an API CSV file. Please see Code Louisville Project Form for API information. 
+The information entered in the contact form will be posted to an API CSV file if the user inputs data that meets the form requirements.  If the posting is successful the user will see the alert, ""Your Contact Form Data Was Saved!"  If the post was not successful, the site will alert the user, "Huston, We Have A Problem! Your Contact Form Data Was NOT Saved!"
+
+Please see Code Louisville Project Form for API information. 

@@ -59,7 +59,6 @@ function validate(){
     "You must enter a valid email address",
     "Please enter more than 10 characters in your message"];
 
-    var text;
     if (userName != userNameInput) {
       errorMessage.innerHTML = errorMessageOptions[0];
       return false;
