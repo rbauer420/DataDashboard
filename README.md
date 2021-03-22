@@ -17,7 +17,7 @@ You must show us or document where that information is being stored so we can co
 
 (5) Visualize data in a graph, chart, or other visual representation of data
 
-TO DO (6) Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
+(6) Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
 
 TO DO (7) Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
 
@@ -49,6 +49,9 @@ In the second column there are three graphs (horizontal bar, line and a doughnut
 
 As the screen size gets smaller, both columns will reduce in size and then collapse from two columns to one column. The graphs will be responsive to the size of the screen to display the entire graph. 
 
+In the console, when the window loads data from an external CSV file is being fetched from an API and displayed automatically when the page loads.
+
+Link to API: https://api.apispreadsheets.com/data/9745/
  
 
 ***Contact Page***
@@ -71,4 +74,4 @@ If the user enters everything according to the validation, the form will submit 
 
 The information entered in the contact form will be posted to an API CSV file if the user inputs data that meets the form requirements.  If the posting is successful the user will see the alert, ""Your Contact Form Data Was Saved!"  If the post was not successful, the site will alert the user, "Huston, We Have A Problem! Your Contact Form Data Was NOT Saved!"
 
-Please see Code Louisville Project Form for API information. 
+Link to API: https://api.apispreadsheets.com/data/9192/

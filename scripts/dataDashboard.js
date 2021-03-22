@@ -336,21 +336,18 @@ function showAgeSuspect() {
     });
 
 //Read KY_Census_Pop.csv
-window.onload = displayCSV();
+window.onload = getData();
 
-function displayCSV(){
-    displayPopKY = document.getElementById("#popKY");
+async function getData() {
+        displayKYPop = document.getElementById("popKY");
 
-    fetch("https://api.apispreadsheets.com/data/9745/").then(res=>{
-        if (res.status === 200){
-            // SUCCESS
-            res.json().then(data=>{
-                const yourData = data
-            }).catch(err => console.log(err))
-        }
-        else{
-            // ERROR
-        }
-    })
-}
+        const response = await fetch("https://api.apispreadsheets.com/data/9745/");
+        const data = await response.text();
+        console.log(data);
 
+        //Split and slice function not working
+        const rows = data.split(/\n/).slice(1);
+        rows.forEach(row => {
+            console.log(row);
+        });
+    }
