@@ -334,3 +334,23 @@ function showAgeSuspect() {
     window.addEventListener("load", () => {
     document.getElementById("selectAgeSuspect").addEventListener("change",showAgeSuspect); 
     });
+
+//Read KY_Census_Pop.csv
+window.onload = displayCSV();
+
+function displayCSV(){
+    displayPopKY = document.getElementById("#popKY");
+
+    fetch("https://api.apispreadsheets.com/data/9745/").then(res=>{
+        if (res.status === 200){
+            // SUCCESS
+            res.json().then(data=>{
+                const yourData = data
+            }).catch(err => console.log(err))
+        }
+        else{
+            // ERROR
+        }
+    })
+}
+
