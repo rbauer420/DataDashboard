@@ -77,3 +77,10 @@ If the user enters everything according to the validation, the form will submit 
 The information entered in the contact form will be posted to an API CSV file if the user inputs data that meets the form requirements.  If the posting is successful the user will see the alert, ""Your Contact Form Data Was Saved!"  If the post was not successful, the site will alert the user, "Huston, We Have A Problem! Your Contact Form Data Was NOT Saved!"
 
 Link to API: https://api.apispreadsheets.com/data/9192/
+
+
+The next funtion on this page is a Per Capita Calculator. The user enters an interger for total times a crime was reported (whole number) and total times a crime was reported (whole number) and then toggles the "Calculate Per Capita" button. 
+
+The JS function will complete the following math function ((totalCrime/totalPop)*100000) and provide the user with a per capita value.  
+
+If the user enters something that does not match the regex of a whole number for either input, an error message will appear that says, ""Please enter a whole number." 
