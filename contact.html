@@ -55,6 +55,26 @@
             </div>
         </div>
 
+<!--- Per Capita Calc. /> -->
+        <div class="calcPerCap">
+            <form action="contact.html" method="post">
+                <h1 class= "calcTitle">    
+                    Per Capita Calculator
+                </h1>
+                <div id="calcErrorMessage"></div>
+                <fieldset>
+                    <p class="headerTotalCrime"></p>
+                    <input id="totalCrime" type="text" id="totalCrime" name="user_totalCrime" placeholder="Total Times Offense Was Reported"></input>
+
+                    <p class="headerTotalPop"></p>
+                    <input id="totalPop" type="text" id="totalPop" name="user_totalPop" placeholder="Total Population"></input>
+                </fieldset>
+                <button class="calcButton" onclick="calculate(event)">Calculate Per Capita</button>
+                
+                <h3 id="yourPerCap"></h3>
+                <h4 id="calcDisclaimer">Per Capita Based on Per 100,000 people</h4>
+            </form>
+
     <!--- Footer /> -->
         <footer class="main-footer">
             <div class="footer-inner">

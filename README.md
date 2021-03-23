@@ -17,9 +17,11 @@ You must show us or document where that information is being stored so we can co
 
 (5) Visualize data in a graph, chart, or other visual representation of data
 
-(6) Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
+(6) Create and use a function that accepts two or more values (parameters), calculates or determines a new value based on those inputs, and returns a new value
 
-TO DO (7) Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
+(7) Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
+
+TO DO (8) Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
 
 
 

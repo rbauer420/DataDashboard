@@ -93,3 +93,26 @@ function formatPhone() {
       number.value = n;
   });
 }
+
+//Per Capita Calc.//
+function calculate(event) {
+  event.preventDefault(); 
+  var field1 = document.getElementById('totalCrime').value;
+  var field2 = document.getElementById('totalPop').value;
+  var totalCrime=parseInt(field1)
+  var totalPop=parseInt(field2)
+  var result = ((totalCrime/totalPop)*100000);
+
+  calcErrorMessage.style.padding = "10px"; 
+
+  let calcErrorMessageOptions = ["Please enter a whole number."];
+
+    if (totalCrime == /^0*[1-9]\d*$/ || totalPop == /^0*[1-9]\d*$/) {
+      calcErrorMessage.innerHTML = calcErrorMessageOptions[0];
+      return false;
+    } else {
+      return document.getElementById("yourPerCap").innerHTML="Your Per Capita is "+ result;
+    };
+}
+
+
