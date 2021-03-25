@@ -6,22 +6,20 @@ This website is a Data Dashboard that visualizes data from the Federal Bureau of
 ***Features List***
 This project includes the following features:
 
-(1) Post to an external API and show that it has saved/persisted
+(1) Create a form and save the values (on click of Submit button) to an external file 
+You must show us or document where that information is being stored so we can confirm that it’s being saved/persisted (note data is being saved to an API)
 
-(2) Create a form and save the values (on click of Submit button) to an external file 
-You must show us or document where that information is being stored so we can confirm that it’s being saved/persisted
+(2) Create an array, dictionary or list, populate it with multiple values, retrieve at least one value, and use or display it in your application
 
-(3) Create an array, dictionary or list, populate it with multiple values, retrieve at least one value, and use or display it in your application
+(3) Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
 
-(4) Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
+(4) Visualize data in a graph, chart, or other visual representation of data
 
-(5) Visualize data in a graph, chart, or other visual representation of data
+(5) Create and use a function that accepts two or more values (parameters), calculates or determines a new value based on those inputs, and returns a new value
 
-(6) Create and use a function that accepts two or more values (parameters), calculates or determines a new value based on those inputs, and returns a new value
+(6) Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
 
-(7) Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX)
-
-TO DO (8) Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
+TO DO (7) Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
 
 
 
