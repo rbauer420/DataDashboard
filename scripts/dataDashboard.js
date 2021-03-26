@@ -344,6 +344,7 @@ async function getData() {
         const response = await fetch("https://api.apispreadsheets.com/data/9745/");
         const data = await response.text();
         console.log(data);
+        displayKYPop.innerHTML = data;
 
         //Split and slice function not working
         const rows = data.split(/\n/).slice(1);
@@ -351,3 +352,5 @@ async function getData() {
             console.log(row);
         });
     }
+
+

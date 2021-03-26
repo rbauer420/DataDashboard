@@ -215,6 +215,21 @@ select {
     margin-top: 10%;
   } 
 
+  .container-fluid {
+    background: lightslategray;
+  }
+
+  #kyPopTitle{
+      color: lightcoral;
+      text-shadow: 2px 2px 4px black; 
+      padding-left: 5%;
+  }
+
+  #popKY {
+    padding-left: 7%;
+    padding-bottom: 2.5%;
+  }
+
 /**Data Viz Content**/  
   .vizCol {
         width: 100%;

@@ -34,7 +34,7 @@ As the screen size gets smaller, the navigation links begin to wrap and then at 
 
 ***Footer***
 
-  The footer contains copyright information and on the main page, the source of the data included in the dashboard.
+The footer contains copyright information and on the main page, the source of the data included in the dashboard.
 
 
 ***Homepage***
@@ -49,7 +49,7 @@ In the second column there are three graphs (horizontal bar, line and a doughnut
 
 As the screen size gets smaller, both columns will reduce in size and then collapse from two columns to one column. The graphs will be responsive to the size of the screen to display the entire graph. 
 
-In the console, when the window loads data from an external CSV file is being fetched from an API and displayed automatically when the page loads.
+When the window loads data from an external CSV file (KY population) is being fetched from an API and displayed automatically when the page loads below the doughnut graph as well as in the console.
 
 Link to API: https://api.apispreadsheets.com/data/9745/
  
