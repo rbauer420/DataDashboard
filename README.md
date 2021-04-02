@@ -9,7 +9,7 @@ This project includes the following features:
 (1) Create a form and save the values (on click of Submit button) to an external file 
 You must show us or document where that information is being stored so we can confirm that it’s being saved/persisted (note data is being saved to an API)
 
-(2) Create an array, dictionary or list, populate it with multiple values, retrieve at least one value, and use or display it in your application
+(2) Create an array, dictionary, or list, populate it with multiple values, retrieve at least one value, and use or display it in your application
 
 (3) Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format
 
@@ -34,18 +34,18 @@ As the screen size gets smaller, the navigation links begin to wrap and then at 
 
 ***Footer***
 
-The footer contains copyright information and on the main page, the source of the data included in the dashboard.
+The footer contains copyright information and on the main page and the source (hyperlink) of the data included in the dashboard.
 
 
 ***Homepage***
 
 See files: index.html, dataDashboard.js and dataDashboard.css
 
-This page contains all of the data used in the data dashboard displayed in multiple ways.  
+This page contains all the data used in the data dashboard displayed in multiple ways.  
 
 In the first column (the "Variables" column), the users can select a variable from the dropdown button and below the dropdown menu, the page will display the total count for that variable (e.g. how many victims identified as female) that has been pulled from an array based on the users selection.
 
-In the second column there are three graphs (horizontal bar, line and a doughnut graph).  The labels on the x-axis will be displayed on the horizontal bar and the line graph.  When the user hovers over the bar on the first graph, the circle on the line graph or any section/slice of the doughnut graph a popup will display with the data label and the total. The outline of the bar, the circle on the line graph or the section/slice of the doughnut graph will change color from dark gray to gold. 
+In the second column there are three graphs (horizontal bar, line, and a doughnut graph).  The labels on the x-axis will be displayed on the horizontal bar and the line graph.  When the user hovers over the bar on the first graph, the circle on the line graph or any section/slice of the doughnut graph a popup will display with the data label and the total. The outline of the bar, the circle on the line graph or the section/slice of the doughnut graph will change color from dark gray to gold. 
 
 As the screen size gets smaller, both columns will reduce in size and then collapse from two columns to one column. The graphs will be responsive to the size of the screen to display the entire graph. 
 
@@ -64,7 +64,7 @@ If the user enters a name with numbers, a red, error message will display under 
 
 If the user enters a subject with numbers, a red, error message will display under the header saying, "Your subject can only contain letters a-z". 
 
-If the user enters an ivalid phone number, a red, error message will display under the header saying, "You must enter a telephone number in the format of (555) 555-5555".
+If the user enters an invalid phone number, a red, error message will display under the header saying, "You must enter a telephone number in the format of (555) 555-5555".
 
 If the user enters an invalid email address, error message will display under the header saying, "You must enter a valid email address". 
 
@@ -77,8 +77,8 @@ The information entered in the contact form will be posted to an API CSV file if
 Link to API: https://api.apispreadsheets.com/data/9192/
 
 
-The next funtion on this page is a Per Capita Calculator. The user enters an interger for total times a crime was reported (whole number) and total times a crime was reported (whole number) and then toggles the "Calculate Per Capita" button. 
+The next function on this page is a Per Capita Calculator. The user enters an integer for total times a crime was reported (whole number) and total times a crime was reported (whole number) and then toggles the "Calculate Per Capita" button. 
 
 The JS function will complete the following math function ((totalCrime/totalPop)*100000) and provide the user with a per capita value.  
 
-If the user enters something that does not match the regex of a whole number for either input, an error message will appear that says, ""Please enter a whole number." 
+If the user enters something that does not match the regex of a whole number for either input, an error message will appear that says, "Please enter a whole number." 
